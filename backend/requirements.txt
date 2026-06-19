@@ -1,0 +1,20 @@
+# API
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# Données & ML
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+statsmodels>=0.14
+xgboost>=2.0
+joblib>=1.3
+
+# Optionnels (selon le meilleur modèle sauvegardé)
+prophet>=1.1          # si Prophet est le meilleur prévisionniste
+tensorflow>=2.12      # si LSTM / autoencoder
+
+# Base de données (optionnelle — seulement si USE_DATABASE=True)
+SQLAlchemy>=2.0
+psycopg2-binary>=2.9
+GeoAlchemy2>=0.14
